@@ -1,7 +1,6 @@
 <?php 
-    header('Content-Type: application/json');
+    include('../../headers.php');
 
-    
     $json = [];
     $json["status"] = "error";  
     

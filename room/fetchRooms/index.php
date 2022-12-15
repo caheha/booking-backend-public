@@ -1,5 +1,5 @@
 <?php
-    header('Content-Type: application/json');
+    include('../../headers.php');
 
     $json = [];
     $json["status"] = "error";
@@ -67,7 +67,7 @@
                 $type = array_values(array_filter($categories->data, function($obj){ 
                     return $obj->categoryType === 'type';
                 }));
-
+                
                 $facilities = array_values(array_filter($categories->data, function($obj){ 
                     return $obj->categoryType === 'facilities';
                 }));
